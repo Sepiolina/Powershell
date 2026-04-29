@@ -20,3 +20,5 @@ A curated collection of practical PowerShell scripts for automation, system admi
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
 2.  **Administrator Privileges:** Most maintenance scripts require "Run as Administrator."
+
+![Build Status](https://github.com/username/reponame/actions/workflows/main.yml/badge.svg)
