@@ -1,3 +1,11 @@
+<#
+.SYNOPSIS
+Generates a professionally styled HTML dashboard for monitoring system health and hardware status.
+
+.DESCRIPTION
+This script queries CIM instances and system services to collect vital hardware and software metrics. It gathers details on system uptime, CPU and RAM capacity, BIOS version, battery health, recent Windows security updates, local disk space utilization, and stopped automatic services. The aggregated data is compiled into a modern HTML report, saved directly to the user's Desktop, and automatically opened in the default web browser for immediate review.
+#>
+
 # 1. Gather System Uptime & OS Info
 $OS = Get-CimInstance Win32_OperatingSystem
 $Uptime = (Get-Date) - $OS.LastBootUpTime
