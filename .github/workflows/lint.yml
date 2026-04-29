@@ -1,0 +1,13 @@
+name: Lint PowerShell
+on: [push]
+
+jobs:
+  lint:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run PSScriptAnalyzer
+        shell: powershell
+        run: |
+          Invoke-ScriptAnalyzer -Path ./ -Recurse | 
+          ForEach-Object { Write-Error $_.Message }
