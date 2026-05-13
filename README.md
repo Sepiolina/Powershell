@@ -1,5 +1,7 @@
 # 🛠️ PowerShell
 ![Build Status](https://github.com/Sepiolina/Powershell/actions/workflows/CI.yml/badge.svg)
+
+
 A curated collection of practical PowerShell scripts for automation, system administration, and devops.
 
 ---
